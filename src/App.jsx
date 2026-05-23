@@ -443,7 +443,6 @@ export default function EvalnilaWebsite() {
               </div>
             </div>
           </div>
-
           <div style={{ borderTop:`1px solid rgba(201,168,76,0.12)`, paddingTop:20, display:"flex", justifyContent:"space-between", flexWrap:"wrap", gap:10 }}>
             <span style={{ fontFamily:"'Jost',sans-serif", fontSize:11, color:"rgba(138,170,138,0.4)", letterSpacing:"0.08em" }}>© 2025 Evalnila Designers. All rights reserved.</span>
             <span style={{ fontFamily:"'Jost',sans-serif", fontSize:11, color:G.textMuted, letterSpacing:"0.1em" }}>✦ Pethappampatti, Tiruppur, Tamil Nadu – 642205</span>
