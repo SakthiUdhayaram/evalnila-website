@@ -1,3 +1,5 @@
+import logoImg from "./assets/logo.jpg";
+import collection1Img from "./assets/collection1.jpg";
 import { useState, useEffect, useRef } from "react";
 
 const NAV_LINKS = ["Home", "About", "Collections", "Contact"];
@@ -33,7 +35,7 @@ const COLLECTIONS = [
     title: "Kurti Sets",
     subtitle: "Ethnic Elegance",
     tag: "New Arrival",
-    img: "/collection1.jpg",
+    img: collection1Img,
   },
   {
     title: "Designer Sarees",
@@ -173,7 +175,7 @@ export default function EvalnilaWebsite() {
       {/* ══ NAV ══ */}
       <nav style={{ position:"fixed", top:0, left:0, right:0, zIndex:300, height:72, padding:"0 40px", display:"flex", alignItems:"center", justifyContent:"space-between", background: scrolled ? "rgba(13,40,24,0.97)" : "transparent", backdropFilter: scrolled ? "blur(20px)" : "none", borderBottom: scrolled ? `1px solid ${G.border}` : "none", transition:"all 0.4s" }}>
         <div onClick={() => scrollTo("home")} style={{ cursor:"pointer", display:"flex", alignItems:"center", gap:12 }}>
-          <img src="/logo.jpg" alt="Evalnila Logo" style={{ height:48, width:48, borderRadius:"50%", objectFit:"cover", border:`1.5px solid ${G.gold}`, boxShadow:`0 0 16px rgba(201,168,76,0.35)` }} />
+          <img src={logoImg} alt="Evalnila Logo" style={{ height:48, width:48, borderRadius:"50%", objectFit:"cover", border:`1.5px solid ${G.gold}`, boxShadow:`0 0 16px rgba(201,168,76,0.35)` }} />
           <div>
             <div style={{ fontFamily:"'Cormorant Garamond',serif", fontSize:20, fontWeight:700, fontStyle:"italic", color:G.goldLight, letterSpacing:"0.1em" }}>Evalnila</div>
             <div style={{ fontFamily:"'Jost',sans-serif", fontSize:7.5, letterSpacing:"0.38em", color:G.textMuted, textTransform:"uppercase" }}>Designers</div>
@@ -208,7 +210,7 @@ export default function EvalnilaWebsite() {
 
         {/* Watermark logo */}
         <div style={{ position:"absolute", right:"-3%", top:"50%", transform:"translateY(-50%)", width:"46%", aspectRatio:"1", borderRadius:"50%", overflow:"hidden", opacity:0.12 }}>
-          <img src="/logo.jpg" alt="" style={{ width:"100%", height:"100%", objectFit:"cover" }} />
+          <img src={logoImg} alt="" style={{ width:"100%", height:"100%", objectFit:"cover" }} />
         </div>
 
         {/* Crescent rings echo */}
@@ -284,7 +286,7 @@ export default function EvalnilaWebsite() {
         <div className="about-flex" {...rv("about")} style={{ maxWidth:1150, margin:"0 auto", display:"flex", gap:72, alignItems:"center" }}>
           <div style={{ flex:1, position:"relative" }}>
             <div style={{ borderRadius:4, overflow:"hidden", border:`1px solid ${G.border}`, boxShadow:`0 20px 60px rgba(0,0,0,0.45)` }}>
-              <img src="/logo.jpg" alt="Eval Designers" style={{ width:"100%", aspectRatio:"1", objectFit:"cover" }} />
+              <img src={logoImg} alt="Eval Designers" style={{ width:"100%", aspectRatio:"1", objectFit:"cover" }} />
             </div>
             <div style={{ position:"absolute", top:-14, left:-14, width:70, height:70, border:`1px solid ${G.border}`, borderRadius:2 }} />
             <div style={{ position:"absolute", bottom:-14, right:-14, width:100, height:100, border:`1px solid rgba(201,168,76,0.13)`, borderRadius:2 }} />
@@ -401,7 +403,7 @@ export default function EvalnilaWebsite() {
           <div className="footer-top" style={{ display:"flex", justifyContent:"space-between", flexWrap:"wrap", gap:36, marginBottom:44 }}>
             <div>
               <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:14 }}>
-                <img src="/logo.jpg" alt="Logo" style={{ width:44, height:44, borderRadius:"50%", objectFit:"cover", border:`1px solid ${G.border}` }} />
+                <img src={logoImg} alt="Logo" style={{ width:44, height:44, borderRadius:"50%", objectFit:"cover", border:`1px solid ${G.border}` }} />
                 <div>
                   <div style={{ fontFamily:"'Cormorant Garamond',serif", fontSize:20, fontWeight:700, fontStyle:"italic", color:G.goldLight }}>Evalnila</div>
                   <div style={{ fontFamily:"'Jost',sans-serif", fontSize:7.5, letterSpacing:"0.38em", color:G.textMuted, textTransform:"uppercase" }}>Designers</div>
